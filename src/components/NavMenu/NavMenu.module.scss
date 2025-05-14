@@ -1,0 +1,90 @@
+@import "../../global.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+}
+
+.title {
+  font-size: 1.5rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.logo img {
+  width: 50px; /* Default size */
+  height: auto;
+  max-width: 100%; /* Ensures it scales correctly */
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navLink i {
+  margin-right: 8px;
+}
+
+.subMenu {
+  display: none;
+  position: absolute;
+  background: #444;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+}
+
+.navItem:hover .subMenu {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navList {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #333;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .navList.active {
+    display: flex;
+  }
+}
