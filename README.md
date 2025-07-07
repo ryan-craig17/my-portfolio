@@ -1,46 +1,92 @@
-# Getting Started with Create React App
+# Ryan Craig | Full Stack Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio site, built with React and TypeScript. It showcases my development skills across front-end, back-end, and everything in between—including dynamic routing, custom components, responsive design, and modular architecture.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- React + TypeScript
+- React Router (v6)
+- SCSS Modules
+- Custom hooks and reusable components
+- [Create React App](https://github.com/facebook/create-react-app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```plaintext
+src/
+├── assets/         # Logos, fonts, images
+├── components/     # Global UI components
+├── features/       # App-specific building blocks (e.g. forms)
+├── hooks/          # Custom React hooks
+├── pages/          # Route-based views like Home, Contact, Space Station
+├── styles/         # Global SCSS variables and mixins
+├── types/          # Shared TypeScript interfaces
+└── App.tsx
+```
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To run this portfolio locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Testing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Launch the test runner in watch mode:
 
-### `npm run eject`
+```bash
+npm test
+```
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Build for Production
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To compile and optimize the project for deployment:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm run build
+```
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Customization
 
-## Learn More
+Feel free to tailor the project to your style and needs:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **App Metadata**  
+  Update `public/manifest.json` and `index.html` to define your site name, theme color, favicon, and description.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Global Styles**  
+  Modify SCSS variables in `/styles` or `global.scss` for custom colors, typography, and responsive breakpoints.
+
+- **Routing Structure**  
+  Edit `AppRoutes.tsx` to manage your navigation tabs and route configuration.
+
+- **Page Content**  
+  Add or update views in the `pages/` folder to expand your portfolio, like a Space Station showcase, blog, or contact form.
+
+- **Components**  
+  Create reusable UI pieces in `components/` or domain-specific logic in `features/`.
+
+---
+
+## Credits
+
+Built with:
+
+- [Create React App](https://create-react-app.dev/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [SCSS Modules](https://sass-lang.com/)
+- Fonts via [Google Fonts](https://fonts.google.com/)  
+  *(Orbitron, Rajdhani, Roboto — because style matters)*
+
+Designed and coded by **Ryan Craig** 💻  
+For work inquiries or collaboration ideas, check out the **Contact** page.

@@ -17,9 +17,9 @@
 }
 
 .logo img {
-  width: 50px; /* Default size */
+  width: 50px;
   height: auto;
-  max-width: 100%; /* Ensures it scales correctly */
+  max-width: 100%;
 }
 
 .hamburger {
@@ -48,10 +48,8 @@
   padding: 10px;
   display: flex;
   align-items: center;
-}
-
-.navLink i {
-  margin-right: 8px;
+  transition: border-bottom 0.3s ease;
+  text-decoration: none !important;
 }
 
 .subMenu {
@@ -66,9 +64,14 @@
 
 .navItem:hover .subMenu {
   display: block;
+  //TODO add highlighting css once I need a sub menu
 }
 
-@media (max-width: 768px) {
+.active {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+@media (max-width: 810px) {
   .hamburger {
     display: block;
   }
@@ -82,9 +85,11 @@
     background: #333;
     padding: 15px;
     width: 100%;
+    border-bottom: none;
   }
 
   .navList.active {
     display: flex;
+    border-bottom: none;
   }
 }
