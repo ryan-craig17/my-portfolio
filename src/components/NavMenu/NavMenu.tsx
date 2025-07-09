@@ -4,7 +4,7 @@ import styles from './NavMenu.module.scss';
 import { NavLink } from 'react-router-dom';
 import { AppRoutes as Routes } from '../../routes/AppRoutes';
 
-const NavMenu = () => {
+const NavMenu: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const hamburgerIcon = "\u2630";
 
