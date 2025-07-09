@@ -26,6 +26,7 @@ const ContactIcons: React.FC = () => {
             <UpworkIcon className="icon" style={{ width: '5rem', height: '5rem' }} />
           </a>
         </li>
+        
         <li>
           <a href="https://www.fiverr.com/s/jjEXvg9" target="_blank" rel="noopener noreferrer">
             <FiverrIcon className="icon" style={{ width: '5rem', height: '5rem' }} />
