@@ -15,7 +15,7 @@ const NavMenu: React.FC = () => {
                     <img src={logo} />
                 </div>
                 <div className={styles.title}>Ryan Craig</div>
-
+                {/* TODO - fix the hamburger menu being cut off. Also fix clicking outside the menu not closing it */}
                 <button className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
                     {hamburgerIcon}
                 </button>
