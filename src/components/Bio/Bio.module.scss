@@ -1,0 +1,46 @@
+@use '../../styles/global.scss' as *;
+
+.aboutWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90;
+    padding: 2rem;
+}
+
+.aboutContainer {
+    max-width: 700px;
+    color: $text-color;
+
+    h1,
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-weight: normal;
+        font-size: 1.5rem;
+        color: lighten($text-color, 20%);
+    }
+
+    p {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-link {
+        color: $accent-color;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .aboutWrapper {
+        padding-top: 80px;
+    }
+}

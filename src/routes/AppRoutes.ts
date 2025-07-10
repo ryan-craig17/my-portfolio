@@ -9,10 +9,10 @@ export const AppRoutes = [
 
     },
     {
-        title: 'Contact',
-        url: '/contact',
+        title: 'About',
+        url: '/about',
         enabled: true,
-        topLevel: true,
+        topLevel: true
     },
     {
         title: 'Portfolio',
@@ -23,15 +23,21 @@ export const AppRoutes = [
     {
         title: 'Space Station',
         url: '/space-station',
-        enabled: false, 
+        enabled: false,
         topLevel: true,
         subMenuItems: [
             {
                 title: '',
                 url: '',
-                enabled: true, 
+                enabled: true,
                 topLevel: false,
             }
         ]
-    }
+    },
+    {
+        title: 'Contact',
+        url: '/contact',
+        enabled: true,
+        topLevel: true,
+    },
 ] as NavMenuItem[]; 

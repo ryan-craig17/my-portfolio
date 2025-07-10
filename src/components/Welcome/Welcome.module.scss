@@ -1,0 +1,19 @@
+@use '../../styles/global.scss' as *;
+
+.welcomeContainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../assets/welcome_background.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  text-align: left;
+  padding: 2rem;
+  border-radius: 10px;
+}

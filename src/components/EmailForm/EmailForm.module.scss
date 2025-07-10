@@ -1,0 +1,63 @@
+@use '../../styles/global.scss' as *;
+
+.formContainer {
+  background-color: $surface-background;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+
+  @media screen and (max-width: 768px) {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 1rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  @media screen and (max-width: 480px) {
+    gap: 1rem;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: $base-background;
+  color: $text-color;
+  font-family: $font-family;
+  font-size: 1rem;
+  resize: vertical;
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
+
+p {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+  }
+}
