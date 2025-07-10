@@ -1,7 +1,8 @@
-import NavMenu from './components/NavMenu/NavMenu';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from './pages/Home/Home';
+import NavMenu from './components/NavMenu/NavMenu';
+import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import Home from './pages/Home/Home';
 
 function App() {
   return (
@@ -9,10 +10,10 @@ function App() {
       <NavMenu />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
-
   );
 }
 

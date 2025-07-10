@@ -2,10 +2,10 @@ import React from 'react';
 
 const SpaceStation: React.FC = () => {
 
-    return(
-        <div>
+    return (
+        <body>
             <p>This is Space Station</p>
-        </div>
+        </body>
     );
 }
 
