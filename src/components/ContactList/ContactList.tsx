@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './ContactList.module.scss';
 import { SocialLinks } from '../../data/SocialLinks';
+import styles from './ContactList.module.scss';
 
 const ContactIcons: React.FC = () => {
   return (

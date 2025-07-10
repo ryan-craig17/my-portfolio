@@ -1,11 +1,12 @@
 import React from 'react';
+import Welcome from '../../components/Welcome/Welcome';
+import styles from './Home.module.scss';
 
 const Home: React.FC = () => {
-
-    return(
-        <div>
-            <p>This is Home</p>
-        </div>
+    return (
+        <body className={styles.welcome}>
+            <Welcome />
+        </body>
     );
 }
 

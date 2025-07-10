@@ -4,10 +4,10 @@ import EmailForm from '../../components/EmailForm/EmailForm';
 
 const Contact: React.FC = () => {
   return (
-    <div>
+    <body>
       <EmailForm />
       <ContactList />
-    </div>
+    </body>
   );
 };
 
