@@ -2,9 +2,9 @@ import Bio from "../../components/Bio/Bio";
 
 const About: React.FC = () => {
     return (
-        <body>
+        <div>
             <Bio />
-        </body>
+        </div>
     );
 }
 
