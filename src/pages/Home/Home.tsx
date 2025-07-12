@@ -4,9 +4,9 @@ import styles from './Home.module.scss';
 
 const Home: React.FC = () => {
     return (
-        <body className={styles.welcome}>
+        <div className={styles.welcome}>
             <Welcome />
-        </body>
+        </div>
     );
 }
 
